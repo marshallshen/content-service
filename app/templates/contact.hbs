@@ -1,2 +1,7 @@
-<h1>Contact Page</h1>
+{{textarea value=message class="form-control" placeholder="Your message. (At least 5 characters.)" rows="7"}}
 
+<button class="btn btn-primary btn-lg btn-block" disabled={{isDisabled}} {{action 'sendMessage'}}>Contact Me</button>
+
+{{#if responseMessage}}
+    <div class="alert alert-success">{{responseMessage}}</div>
+{{/if}}
