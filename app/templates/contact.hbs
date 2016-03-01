@@ -1,7 +1,8 @@
 {{textarea value=message class="form-control" placeholder="Your message. (At least 5 characters.)" rows="7"}}
+{{input type="email" value=emailAddress class="form-control" placeholder="Please type your e-mail addres." autofocus="autofocus"}}
 
 <button class="btn btn-primary btn-lg btn-block" disabled={{isDisabled}} {{action 'sendMessage'}}>Contact Me</button>
 
 {{#if responseMessage}}
-    <div class="alert alert-success">{{responseMessage}}</div>
+  <div class="alert alert-success">{{responseMessage}}</div>
 {{/if}}
