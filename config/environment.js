@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'content-service-client',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://resplendent-fire-4489.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
