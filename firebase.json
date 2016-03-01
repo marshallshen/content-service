@@ -1,0 +1,9 @@
+{
+  "firebase": "content-service-client",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
